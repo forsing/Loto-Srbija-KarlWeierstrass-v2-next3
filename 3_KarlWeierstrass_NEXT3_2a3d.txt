@@ -1,0 +1,89 @@
+3_KarlWeierstrass_NEXT3_2a3d — Brownovo kretanje + Sample/Permutation entropy (POGODNO)
+============================================================
+
+KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
+
+  CSV izvucenih:        /Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv
+  Ucitano izvlacenja:    4624
+  C(39,7):              15,380,937
+  f(t) = lex-indeks izvucene kombinacije u skupu svih 39C7
+
+
+============================================================
+KORAK 2a3d: Aparat 2a Brownovo kretanje + Test 3d Sample / Permutation entropy
+============================================================
+
+  PNG:                  /Users/4c/Desktop/GHQ/KarlWeierstrass/3_KarlWeierstrass_NEXT3_2a3d.png
+
+Sample entropy:
+  m                     = 2
+  r                     = 0.2
+  n used                = 1200
+  SampEn(dX)            = 2.21166005
+  SampEn(Brown-putanja) = 2.14180004
+  A count               = 917
+  B count               = 8373
+
+Permutation entropy:
+  order            PE bits         PE norm      patterns       max
+  3             2.57159803      0.99482992             6         6
+  4             4.51437878      0.98460539            24        24
+  5             6.71984810      0.97291943           120       120
+
+Shuffled entropy referenca:
+  runs                  = 100
+  SampEn mean           = 2.22787025
+  SampEn std            = 0.03166193
+  SampEn z              = -0.51197783
+  SampEn p_low          = 0.31000000
+  PE4 mean              = 0.99934523
+  PE4 std               = 0.00022582
+  PE4 z                 = -65.27324290
+  PE4 p_low             = 0.00000000
+  interpret.            = entropija je niza od shuffled Brown reference (moguca struktura)
+
+Vreme KORAKA 2a3d: 0:00:10 (10.5 s)
+Ukupno vreme:       0:00:10 (10.5 s)
+
+============================================================
+PREDIKCIJA 3: NEXT3 / 2a3d / PE / ordinalni kontekst
+============================================================
+
+Model:
+  PE order=4 je nizi od shuffled reference.
+  Poslednja 3 centrirana dX cine ordinalni kontekst.
+  Predikcija koristi istorijske sledece dX vrednosti iz istog konteksta.
+
+Parametri:
+  PE order               = 4
+  trenutni kontekst      = (2, 1, 0)
+  broj prelaza           = 654
+  PE4 norm               = 0.98460539
+  PE4 shuffled mean      = 0.99934523
+  PE4 p_low              = 0.00000000
+  mean(dX)               = -2,003.26238373
+  zadnji lex             = 513,114
+  zadnji inkrement       = -2,143,496.00000000
+  pred. centrirani dX    = 2,262,527.67522777
+  pred. inkrement        = 2,260,524.41284404
+  napomena               = koristi se istorija istog ordinalnog konteksta
+
+Glavna prognoza:
+  pred. lex float        = 2,773,638.41284404
+  pred. lex              = 2,773,638
+  pred. kombinacija      = (2, 3, 4, 7, 11, 21, 25)
+
+Najcesci order=4 patterni iz istog konteksta:
+  pattern=(2, 1, 0, 3)  count=218
+  pattern=(2, 1, 3, 0)  count=194
+  pattern=(2, 3, 1, 0)  count=121
+  pattern=(3, 2, 1, 0)  count=121
+
+Kvantil kandidati iz ordinalnog konteksta:
+         q                dX           lex  kombinacija
+      0.10-5,779,679.00000000             1  (1, 2, 3, 4, 5, 6, 7)
+      0.502,321,449.50000000     2,834,564  (2, 3, 5, 10, 20, 23, 26)
+      0.756,963,264.00000000     7,476,378  (4, 6, 13, 18, 22, 32, 34)
+      0.9010,186,969.40000000    10,700,083  (6, 11, 17, 19, 21, 27, 34)
+
+Vreme PREDIKCIJE 3: 0:00:00 (0.0 s)
