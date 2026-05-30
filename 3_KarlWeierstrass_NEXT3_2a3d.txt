@@ -3,7 +3,7 @@
 
 KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
 
-  CSV izvucenih:        /Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv
+  CSV izvucenih:        /data/loto7_4624_k43.csv
   Ucitano izvlacenja:    4624
   C(39,7):              15,380,937
   f(t) = lex-indeks izvucene kombinacije u skupu svih 39C7
@@ -13,7 +13,7 @@ KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
 KORAK 2a3d: Aparat 2a Brownovo kretanje + Test 3d Sample / Permutation entropy
 ============================================================
 
-  PNG:                  /Users/4c/Desktop/GHQ/KarlWeierstrass/3_KarlWeierstrass_NEXT3_2a3d.png
+  PNG:                  /3_KarlWeierstrass_NEXT3_2a3d.png
 
 Sample entropy:
   m                     = 2
@@ -82,8 +82,8 @@ Najcesci order=4 patterni iz istog konteksta:
 Kvantil kandidati iz ordinalnog konteksta:
          q                dX           lex  kombinacija
       0.10-5,779,679.00000000             1  (1, 2, 3, 4, 5, 6, 7)
-      0.502,321,449.50000000     2,834,564  (2, 3, 5, 10, 20, 23, 26)
-      0.756,963,264.00000000     7,476,378  (4, 6, 13, 18, 22, 32, 34)
-      0.9010,186,969.40000000    10,700,083  (6, 11, 17, 19, 21, 27, 34)
+      0.502,321,449.50000000     2,834,564  (2, x, 5, y, 20, z, 26)
+      0.756,963,264.00000000     7,476,378  (4, x, 13, y, 22, z, 34)
+      0.9010,186,969.40000000    10,700,083  (6, x, 17, y, 21, z, 34)
 
 Vreme PREDIKCIJE 3: 0:00:00 (0.0 s)
