@@ -71,7 +71,7 @@ Parametri:
 Glavna prognoza:
   pred. lex float        = 2,773,638.41284404
   pred. lex              = 2,773,638
-  pred. kombinacija      = (2, 3, 4, 7, 11, 21, 25)
+  pred. kombinacija      = (2, x, 4, y, 11, z, 25)
 
 Najcesci order=4 patterni iz istog konteksta:
   pattern=(2, 1, 0, 3)  count=218
