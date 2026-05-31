@@ -26,7 +26,7 @@ import numpy as np
 
 T0 = time.time()
 
-CSV_DRAWS = "/Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv"
+CSV_DRAWS = "/data/loto7_4624_k43.csv"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PNG_PATH = os.path.join(HERE, "3_KarlWeierstrass_NEXT3_2a3d.png")
@@ -501,7 +501,7 @@ PREDIKCIJA 3 — NEXT3 / 2a3d / PE / ordinalni kontekst
   zadnji inkrement       = -2,143,496.00
   pred. inkrement        = 2,260,524.41
   pred. lex              = 2,773,638
-  pred. kombinacija      = (2, 3, 4, 7, 11, 21, 25)
+  pred. kombinacija      = (2, x, 4, y, 11, z, 25)
   napomena               = koristi se istorija istog ordinalnog konteksta
   najcesci order=4 patterni iz tog konteksta:
     pattern=(2, 1, 0, 3)  count=218
